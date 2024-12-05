@@ -19,6 +19,13 @@ class Program
 
         FuckByTabs(allFiles);
 
+        FuckByChangingCharacter(allFiles, ";", ";");
+        FuckByChangingCharacter(allFiles, "с", "с");
+        FuckByChangingCharacter(allFiles, "a", "а");
+        FuckByChangingCharacter(allFiles, " ", "⠀​");
+
+        
+
 
     }
 
@@ -100,6 +107,34 @@ class Program
 
         return Characters;
     }
+
+    static void FuckByChangingCharacter(List<string> ListOfFiles,string Character, string newCharacter)
+    {
+        foreach (var _currentFile in ListOfFiles)
+        {
+            try
+            {
+                var Text = File.ReadAllLines(_currentFile);
+                string newText = "";
+
+                foreach (var line in Text)
+                {
+
+                    newText += line.Replace(Character, newCharacter)  + "$\n";
+                }
+
+                File.WriteAllText(_currentFile, newText);
+                
+            }
+            catch
+            {
+                Console.WriteLine($"Unable to fuck {_currentFile}, sry");
+            }
+
+        }
+    }
+
+    
 
 
 }
