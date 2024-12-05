@@ -1,0 +1,15 @@
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.AssemblyInfoInputs.cache
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.AssemblyInfo.cs
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.csproj.CoreCompileInputs.cache
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.sourcelink.json
+C:\CodeFucker\bin\Debug\net8.0\CodeFucker.exe
+C:\CodeFucker\bin\Debug\net8.0\CodeFucker.deps.json
+C:\CodeFucker\bin\Debug\net8.0\CodeFucker.runtimeconfig.json
+C:\CodeFucker\bin\Debug\net8.0\CodeFucker.dll
+C:\CodeFucker\bin\Debug\net8.0\CodeFucker.pdb
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.dll
+C:\CodeFucker\obj\Debug\net8.0\refint\CodeFucker.dll
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.pdb
+C:\CodeFucker\obj\Debug\net8.0\CodeFucker.genruntimeconfig.cache
+C:\CodeFucker\obj\Debug\net8.0\ref\CodeFucker.dll
