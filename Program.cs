@@ -17,6 +17,8 @@ class Program
             Console.WriteLine(file);
         }
 
+        FuckByTabs(allFiles);
+
 
     }
 
@@ -45,6 +47,58 @@ class Program
         }
 
         return files;
+    }
+
+    static void FuckByTabs(List<string> ListOfFiles)
+    {
+        foreach (var _currentFile in ListOfFiles)
+        {
+            try
+            {
+                var Text = File.ReadAllLines(_currentFile);
+                string newText = "";
+
+                foreach (var line in Text)
+                {
+
+                    newText += line.Replace("   ", GetRandomAmountForCharacter(" ", 20)) + "$\n";
+                }
+
+                File.WriteAllText(_currentFile, newText);
+                
+            }
+            catch
+            {
+                Console.WriteLine($"Unable to fuck {_currentFile}, sry");
+            }
+
+        }
+    }
+
+    static string GetRandomAmountForCharacter(string Character, int minRandomAmount, int maxRandomAmount)
+    {
+        string Characters = "";
+        int RandomAmount = new Random().Next(minRandomAmount, maxRandomAmount);
+
+        for (int i = 0; i < RandomAmount; i++)
+        {
+            Characters += Character;
+        }
+
+        return Characters;
+    }
+
+    static string GetRandomAmountForCharacter(string Character, int maxRandomAmount)
+    {
+        string Characters = "";
+        int RandomAmount = new Random().Next(0, maxRandomAmount);
+
+        for (int i = 0; i < RandomAmount; i++)
+        {
+            Characters += Character;
+        }
+
+        return Characters;
     }
 
 
